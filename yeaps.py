@@ -415,7 +415,7 @@ if st.button("💾 Proses & Simpan Transaksi"):
 st.markdown("---")
 st.markdown("*(Gunakan tombol di bawah ini untuk membersihkan sesi formulir)*")
 st.button("🔄 Bersihkan Formulir & Mulai Transaksi Baru", on_click=reset_data)
-  st.markdown("#### 📋 Rekapitulasi Produk dalam Keranjang:")
+st.markdown("#### 📋 Rekapitulasi Produk dalam Keranjang:")
   for item in st.session_state.pesanan:
     st.write(
         f"• **{item['produk']}** sebanyak **{item['jumlah']} unit** — Total: Rp"
